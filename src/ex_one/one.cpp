@@ -1,4 +1,6 @@
 #include "one.h"
+#include "project.h"
+#include "student.h"
 #include "../DS/linked_list.h"
 
 #include <iostream>
@@ -19,23 +21,26 @@ void one()
 
 	cout << "\nEnter number of students: ";
 	cin >> n; n++;
-	string *students = new string[n];
+	Student *students = new Student[n];
 
 	cout << "\nEnter number of projects: ";
 	cin >> k; k++;
 
-	cout << "\n Enter names of project one by one: \n";
+
+	cout << "\n Enter names of students one by one: \n";
 	for(int i=0;i<n;i++)
 	{
-			getline(cin, input);
-			students[i]=input;
+		getline(cin, input);
+
+		Student * current = new Student;
+				  current->name=input;
+		students[i]=*current;
 	}
 
-
-	for(int i=0;i<n;i++)
-	{
-		cout << "\n" << students[i];
-	}
+	// for(int i=0;i<n;i++)
+	// {
+	// 	cout << "\n" << students[i].name;
+	// }
 
 
 }
