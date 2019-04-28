@@ -23,16 +23,16 @@ void one()
 	cin >> k;
 
 	cout << "\n Enter names of project one by one: \n";
-	for(int i=0;i<=n;i++)
+	for(int i=0;i<n;i++)
 	{
 			getline(cin, input);
 			students[i]=input;
 	}
 
-	for(int i=0;i<=n;i++)
+
+	for(int i=0;i<n;i++)
 	{
 		cout << "\n" << students[i];
 	}
-
 
 }
