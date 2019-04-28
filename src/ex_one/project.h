@@ -10,7 +10,7 @@ private:
    int its_id;
 
 public:
-   Student();
+   Project();
    string title;
    int get_id();
 

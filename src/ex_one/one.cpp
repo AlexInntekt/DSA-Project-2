@@ -25,7 +25,7 @@ void one()
 
 	cout << "\nEnter number of projects: ";
 	cin >> k; k++;
-
+	Project *projects = new Project[n];
 
 	cout << "\n Enter names of students one by one: \n";
 	for(int i=0;i<n;i++)
@@ -37,9 +37,28 @@ void one()
 		students[i]=*current;
 	}
 
+	cout << "\n Enter names of projects one by one: \n";
+	for(int i=0;i<n;i++)
+	{
+		getline(cin, input);
+
+		Project * current = new Project;
+				  current->title=input;
+		projects[i]=*current;
+	}
+
+
+//**** display students and projects for debugging ****
+	// cout << "\nstudents:\n";
 	// for(int i=0;i<n;i++)
 	// {
 	// 	cout << "\n" << students[i].name;
+	// }
+
+	// cout << "\nprojects:\n";
+	// for(int i=0;i<n;i++)
+	// {
+	// 	cout << "\n" << projects[i].title;
 	// }
 
 

@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int project::no = 0;
+int Project::no = 0;
 Project::Project()
 {
 	its_id = ++no;
