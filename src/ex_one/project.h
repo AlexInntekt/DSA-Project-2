@@ -1,11 +1,10 @@
 
 class Project
 {
-private:
+public:
   //attributes
   public:
-  void method1();
-  void method2();
+
 
 };
 

@@ -2,12 +2,12 @@
 
 #include <iostream>
 
-void Project::method1()
+void Project
 {
   //implementation
 }
 
-void Project::method2()
+void Project
 {
   //implementation
 }

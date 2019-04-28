@@ -2,12 +2,12 @@
 
 #include <iostream>
 
-void Student::method1()
+void Student
 {
   //implementation
 }
 
-void Student::method2()
+void Student
 {
   //implementation
 }
