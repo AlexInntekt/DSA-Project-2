@@ -13,7 +13,8 @@ void one()
 	string input;
 	int n; //number of students
 	int k; //number of projects
-
+    string name_str; //student name
+    string title_str; //project title
 
 	cout << "\nEnter number of students: ";
 	cin >> n;
@@ -34,5 +35,29 @@ void one()
 		cout << "\n" << students[i];
 	}
 
+
+
+	for(int i=0;i<=n;i++)
+	{
+			getline(cin, name_str);
+			students[i]=name_str;
+	}
+
+	for(int i=0;i<=n;i++)
+	{
+		cout <<"Enter name:"; << name_str[i];
+	}
+
+
+    for(int i=0;i<=k;i++)
+	{
+			getline(cin, title_str);
+			project[i]=title_str;
+	}
+
+    for(int i=0;i<=k;i++)
+	{
+		cout <<"Enter project title:"; << title_str[i];
+	}
 
 }

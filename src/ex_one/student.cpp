@@ -7,7 +7,4 @@ void Student
   //implementation
 }
 
-void Student
-{
-  //implementation
-}
+int Student::current_ID;

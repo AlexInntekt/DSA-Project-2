@@ -7,7 +7,3 @@ void Project
   //implementation
 }
 
-void Project
-{
-  //implementation
-}

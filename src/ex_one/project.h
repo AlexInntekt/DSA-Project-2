@@ -1,10 +1,9 @@
+#include <string.h>
 
 class Project
 {
 public:
-  //attributes
-  public:
-
-
+  int ID;
+  string title;
 };
 

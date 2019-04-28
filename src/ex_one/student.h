@@ -5,7 +5,9 @@ class Student
 public:
   string name;
   int ID;
-  public:
+  static int current_ID;
 
-
+  Student():ID(current_ID++) {}
 };
+
+
