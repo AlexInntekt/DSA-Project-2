@@ -13,14 +13,16 @@ void one()
 	string input;
 	int n; //number of students
 	int k; //number of projects
-
+    string name_str; //student name
+    string title_str; //project title
+    string project;
 
 	cout << "\nEnter number of students: ";
-	cin >> n;
+	cin >> n; n++;
 	string *students = new string[n];
 
 	cout << "\nEnter number of projects: ";
-	cin >> k;
+	cin >> k; k++;
 
 	cout << "\n Enter names of project one by one: \n";
 	for(int i=0;i<n;i++)
@@ -34,5 +36,6 @@ void one()
 	{
 		cout << "\n" << students[i];
 	}
+
 
 }
