@@ -4,29 +4,27 @@
 #include <iostream>
 #include <string>
 #include <sstream>
+#include <vector>
 using namespace std;
 
 void one()
 { cout << "\ndclfd src/ex_one/one.cpp/one\n";
 
-int no_students;
 string input;
 
 int i=0;
 
-cout << "\nEnter number of students: ";
-cin >> no_students;
+// cout << "\nEnter number of students: ";
+// cin >> no_students;
+
 cout << "\n Enter names of project one by one, exit with q: \n";
-string *studenti = new string[no_students];
+vector<string> students;
 
 	while(input!="q")
 	{
 		getline(cin, input);
-		cout << input;
+		if(input!="q"){students.push_back(input);}
 	}
-	
-
-	
 	
 
 }
