@@ -16,15 +16,15 @@ void one()
     string project;
 
 	cout << "\nEnter number of students: ";
-	cin >> n; n++;
-	Student *students = new Student[n];
+	cin >> n; 
+	Student *students = new Student[n+1];
 
 	cout << "\nEnter number of projects: ";
-	cin >> k; k++;
-	Project *projects = new Project[k];
+	cin >> k; 
+	Project *projects = new Project[k+1];
 
 	cout << "\n Enter names of students one by one: \n";
-	for(int i=0;i<n;i++)
+	for(int i=0;i<=n;i++)
 	{
 		getline(cin, input);
 
@@ -34,7 +34,7 @@ void one()
 	}
 
 	cout << "\n Enter names of projects one by one: \n";
-	for(int i=0;i<n;i++)
+	for(int i=0;i<=k;i++)
 	{
 		getline(cin, input);
 
@@ -45,9 +45,9 @@ void one()
 
 
 
-   for(int i=0; i<n; i++)
+   for(int i=0; i<=n; i++)
    {
-   		for(int j=0; j<k; j++)
+   		for(int j=0; j<=k; j++)
    		{
    			cout << students[i].name << " " << projects[j].title << "\n";
    		}
