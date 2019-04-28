@@ -15,6 +15,7 @@ void one()
 	int k; //number of projects
     string name_str; //student name
     string title_str; //project title
+    string project;
 
 	cout << "\nEnter number of students: ";
 	cin >> n;
@@ -45,7 +46,7 @@ void one()
 
 	for(int i=0;i<=n;i++)
 	{
-		cout <<"Enter name:"; << name_str[i];
+		cout<<"Enter name:"<< name_str[i];
 	}
 
 
@@ -57,7 +58,7 @@ void one()
 
     for(int i=0;i<=k;i++)
 	{
-		cout <<"Enter project title:"; << title_str[i];
+		cout <<"Enter project title:"<< title_str[i];
 	}
 
 }

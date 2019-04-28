@@ -1,8 +1,8 @@
 #include "project.h"
-
 #include <iostream>
+using namespace std;
 
-void Project
+void Project()
 {
   //implementation
 }
