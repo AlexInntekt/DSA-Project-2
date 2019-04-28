@@ -1,5 +1,6 @@
 #include<iostream>
 #include "run.h"
+#include "ex_one/one.h"
 
 
 int main()
