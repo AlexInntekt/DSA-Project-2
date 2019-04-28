@@ -21,7 +21,7 @@ void one()
 
 	cout << "\nEnter number of projects: ";
 	cin >> k; k++;
-	Project *projects = new Project[n];
+	Project *projects = new Project[k];
 
 	cout << "\n Enter names of students one by one: \n";
 	for(int i=0;i<n;i++)
@@ -44,22 +44,16 @@ void one()
 	}
 
 
-//**** display students and projects for debugging ****
-	// cout << "\nstudents:\n";
-	// for(int i=0;i<n;i++)
-	// {
-	// 	cout << "\n" << students[i].name;
-	// }
 
-	// cout << "\nprojects:\n";
-	// for(int i=0;i<n;i++)
-	// {
-	// 	cout << "\n" << projects[i].title;
-	// }
+   for(int i=0; i<n; i++)
+   {
+   		for(int j=0; j<k; j++)
+   		{
+   			cout << students[i].name << " " << projects[j].title << "\n";
+   		}
+   }
 
-
-
-	backtrack(students[0].no, students, projects[0].no, projects);
+	// backtrack(students[0].no, students, projects[0].no, projects);
 }
 
 
@@ -67,13 +61,6 @@ void one()
 void backtrack(int n, Student students[], int k, Project projects[])
 {
 
-   
 
-   for(int i=0; i<n; i++)
-   {
-   		for(int j=0; j<k; j++)
-   		{
-   			cout <<  " " << projects[j].title << "\n";
-   		}
-   }
+	
 }
