@@ -6,10 +6,10 @@ using namespace std;
 class Student
 {
 private:
-   static int no;
    int its_id;
 
 public:
+   static int no;
    Student();
    string name;
    int get_id();

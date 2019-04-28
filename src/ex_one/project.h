@@ -6,10 +6,10 @@ using namespace std;
 class Project
 {
 private:
-   static int no;
    int its_id;
 
 public:
+   static int no;
    Project();
    string title;
    int get_id();

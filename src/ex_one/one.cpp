@@ -1,8 +1,4 @@
 #include "one.h"
-#include "project.h"
-#include "student.h"
-#include "../DS/linked_list.h"
-
 #include <iostream>
 #include <string>
 #include <sstream>
@@ -62,4 +58,22 @@ void one()
 	// }
 
 
+
+	backtrack(students[0].no, students, projects[0].no, projects);
+}
+
+
+
+void backtrack(int n, Student students[], int k, Project projects[])
+{
+
+   
+
+   for(int i=0; i<n; i++)
+   {
+   		for(int j=0; j<k; j++)
+   		{
+   			cout <<  " " << projects[j].title << "\n";
+   		}
+   }
 }
